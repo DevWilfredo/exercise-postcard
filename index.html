@@ -1,1 +1,82 @@
-hello!! world
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Postcard Excercise</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap" rel="stylesheet" />
+		<style>
+			* {
+				font-family: "Pacifico", cursive;
+				font-weight: 400;
+				font-style: normal;
+			}
+			body {
+				background-color: black;
+				display: flex;
+				justify-content: center;
+			}
+			.main {
+				width: 655px;
+				height: 433px;
+				background-color: white;
+				padding-top: 10px;
+			}
+
+			.postcard-heading {
+				display: flex;
+			}
+
+			#4geeks-logo {
+				width: 100px;
+				height: auto;
+			}
+			.postcard-heading h1 {
+				width: 80%;
+				margin-left: 20px;
+			}
+			.postcard-body {
+				display: flex;
+				margin-left: 20px;
+			}
+
+			.postcard-body input {
+				border: none;
+				border-bottom: 1px solid gray;
+				margin-right: 20px;
+			}
+			.postcard-footer {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="postcard-heading">
+				<h1>My Postcard</h1>
+				<img
+					width="100px"
+					height="100px"
+					id="4geeks-logo"
+					src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png?raw=true"
+					alt="4geeks Logo"
+				/>
+			</div>
+			<div class="postcard-body">
+				<p>
+					Look how Awesome! This is a postcard that i created using HTML5 and css3 during my 4geeks academy course!<br /><br />This is so
+					cool, can't wait to start doing more stuff
+				</p>
+				<form action="">
+					<input type="text" name="name" id="name" placeholder="Some Name" />
+					<input type="text" name="email" id="email" placeholder="Some email" />
+					<input type="text" name="comment" id="comment" placeholder="Some comment" />
+				</form>
+			</div>
+			<div class="postcard-footer">
+				<button>Send My Postcard</button>
+			</div>
+		</div>
+	</body>
+</html>
